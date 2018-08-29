@@ -25,7 +25,7 @@ brew update
 
 #Base OBS Deps and ccache
 brew install jack speexdsp ccache swig mbedtls
-brew install ./qt.rb
+brew install https://raw.githubusercontent.com/obsproject/obs-studio/mac-interact-test/CI/qt.rb
 
 export PATH=/usr/local/opt/ccache/libexec:$PATH
 ccache -s || echo "CCache is not available."
